@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const total_classes = prompt('Total number of classes held:');
+      const attended_classes = prompt('Total number of classes attended:');
+      const medical_cause = prompt('If health is ill then type yes(Y) or no(N): (Y/N)');
+      if (attended_classes / total_classes >= 0.75){
+        alert(true);
+      } else if(medical_cause === 'Y' && attended_classes / total_classes >= 0.60){
+        alert(true);
+      } else{
+        alert(false);
+      }
+    </script>
+  </body>
+</html>
